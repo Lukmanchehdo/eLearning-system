@@ -25,7 +25,7 @@
       if ((@$_POST["card_id"] != "")) {
 
         $sqlInsert = "INSERT INTO tbl_personality(personality, personality_description, realistic, investigative, artistic, social, conventional, enterprising, entrepreneurial_chaacteristics, cross_cultural_awareness, adaptability, teamwork, career, disciplines, card_id) VALUES ('" . $_POST["personality"] . "', '" . $_POST["personality_description"] . "', '" . $_POST["realistic"] . "', '" . $_POST["investigative"] . "', '" . $_POST["artistic"] . "', '" . $_POST["social"] . "', '" . $_POST["conventional"] . "', '" . $_POST["enterprising"] . "','" . $_POST["entrepreneurial_chaacteristics"] . "' , '" . $_POST["cross_cultural_awareness"] . "', '" . $_POST["adaptability"] . "', '" . $_POST["teamwork"] . "', '" . $_POST["career"] . "', '" . $_POST["disciplines"] . "', '" . $_POST["card_id"] . "')";
-        $result = $db->query($sqlInsert);
+        $result = $conn->query($sqlInsert);
         if ($result = true) {
           ?>
         <script type="text/javascript">
@@ -97,7 +97,7 @@
           if ((@$_POST["card_id"] != "")) {
 
             $sqlUpdate = "UPDATE tbl_personality SET personality='" . $_POST["personality"] . "', personality_description='" . $_POST["personality_description"] . "', realistic='" . $_POST["realistic"] . "', investigative='" . $_POST["investigative"] . "', artistic='" . $_POST["artistic"] . "', social='" . $_POST["social"] . "', conventional='" . $_POST["conventional"] . "', enterprising='" . $_POST["enterprising"] . "', entrepreneurial_chaacteristics='" . $_POST["entrepreneurial_chaacteristics"] . "', cross_cultural_awareness='" . $_POST["cross_cultural_awareness"] . "', adaptability='" . $_POST["adaptability"] . "', teamwork='" . $_POST["teamwork"] . "', career='" . $_POST["career"] . "', disciplines='" . $_POST["disciplines"] . "' WHERE card_id = '" . $_POST["card_id"] . "'";
-            $result = $db->query($sqlUpdate);
+            $result = $conn->query($sqlUpdate);
             if ($result = true) {
               ?>
         <script type="text/javascript">
@@ -246,11 +246,11 @@
                                       $row_p = $result_p->fetch_assoc();
                                       if (!empty(@$row_p["card_id"])) {
                                         ?>
-                                    <a data-toggle="modal" data-target="#personalityModal" data-action="update" data-card_id="<?php  echo $row['card_id']; ?>" data-name="<?php  echo $row['prefix'].$row['name'].' '.$row['surname']; ?>" data-personality="<?php  echo $row_p['personality']; ?>" data-personality_description="<?php  echo $row_p['personality_description']; ?>" data-realistic="<?php  echo $row_p['realistic']; ?>" data-investigative="<?php  echo $row_p['investigative']; ?>" data-artistic="<?php  echo $row_p['artistic']; ?>" data-social="<?php  echo $row_p['social']; ?>" data-conventional="<?php  echo $row_p['conventional']; ?>" data-enterprising="<?php  echo $row_p['enterprising']; ?>" data-entrepreneurial_chaacteristics="<?php  echo $row_p['entrepreneurial_chaacteristics']; ?>" data-cross_cultural_awareness="<?php  echo $row_p['cross_cultural_awareness']; ?>" data-adaptability="<?php  echo $row_p['adaptability']; ?>" data-teamwork="<?php  echo $row_p['teamwork']; ?>" data-career="<?php  echo $row_p['career']; ?>" data-disciplines="<?php  echo $row_p['disciplines']; ?>" style="color: #17a2b8; font-size: 26px;"><i class="fas fa-clipboard"></i></a>
+                                    <a data-toggle="modal" data-target="#personalityModal" data-action="update&menu=personality" data-card_id="<?php  echo $row['card_id']; ?>" data-name="<?php  echo $row['prefix'].$row['name'].' '.$row['surname']; ?>" data-personality="<?php  echo $row_p['personality']; ?>" data-personality_description="<?php  echo $row_p['personality_description']; ?>" data-realistic="<?php  echo $row_p['realistic']; ?>" data-investigative="<?php  echo $row_p['investigative']; ?>" data-artistic="<?php  echo $row_p['artistic']; ?>" data-social="<?php  echo $row_p['social']; ?>" data-conventional="<?php  echo $row_p['conventional']; ?>" data-enterprising="<?php  echo $row_p['enterprising']; ?>" data-entrepreneurial_chaacteristics="<?php  echo $row_p['entrepreneurial_chaacteristics']; ?>" data-cross_cultural_awareness="<?php  echo $row_p['cross_cultural_awareness']; ?>" data-adaptability="<?php  echo $row_p['adaptability']; ?>" data-teamwork="<?php  echo $row_p['teamwork']; ?>" data-career="<?php  echo $row_p['career']; ?>" data-disciplines="<?php  echo $row_p['disciplines']; ?>" style="color: #17a2b8; font-size: 26px;"><i class="fas fa-clipboard"></i></a>
 
                                     <?php }else{ ?>
 
-                                    <a data-toggle="modal" data-target="#personalityModal" data-action="insert" data-card_id="<?php  echo $row['card_id']; ?>" data-name="<?php echo $row['prefix'].$row['name'].' '.$row['surname']; ?>" style="color: #17a2b8; font-size: 26px;"><i class="far fa-clipboard"></i></a>
+                                    <a data-toggle="modal" data-target="#personalityModal" data-action="insert&menu=personality" data-card_id="<?php  echo $row['card_id']; ?>" data-name="<?php echo $row['prefix'].$row['name'].' '.$row['surname']; ?>" style="color: #17a2b8; font-size: 26px;"><i class="far fa-clipboard"></i></a>
 
                                     <?php } ?>
                                 </td>
