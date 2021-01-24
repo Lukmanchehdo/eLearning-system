@@ -35,8 +35,9 @@ if ($_SESSION['login'] == "Admin") {
 
       case "user-edit"              : include("pages/user/form.php");                break;
 
-      case "student"               : include("pages/student/index.php");             break;
-      case "personality"          : include("pages/student/personality.php");        break;
+      case "student"                : include("pages/student/index.php");            break;
+      case "personality"            : include("pages/student/personality.php");      break;
+      case "view_chart"             : include("pages/student/std_chart.php");        break;
 
       case "learning"               : include("pages/learning/index.php");           break;
       case "learning-view"          : include("pages/learning/view.php");            break;

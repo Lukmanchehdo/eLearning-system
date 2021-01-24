@@ -254,7 +254,7 @@
 
                                     <?php } ?>
                                 </td>
-                                <td align="center"><a href="std_charts.php?card_id=<?php  echo $encode = urlencode(encrypt($row['card_id'])); ?>&std_code=<?php  echo $encode = urlencode(encrypt($row['std_code'])); ?>" style="color: #20c997; font-size: 18px;"><i class="far fa-eye"></i></a></td>
+                                <td align="center"><a href="?menu=view_chart&card_id=<?php  echo $encode = urlencode(encrypt($row['card_id'])); ?>&std_code=<?php  echo $encode = urlencode(encrypt($row['std_code'])); ?>" style="color: #20c997; font-size: 18px;"><i class="far fa-eye"></i></a></td>
                             </tr>
                             <?php } ?>
                         </tbody>

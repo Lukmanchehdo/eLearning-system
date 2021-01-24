@@ -110,7 +110,7 @@
                           <li class="nav-item">
                               <a href="?menu=personality" class="nav-link <?php if ($_GET["menu"] == "personality"){ echo "active"; } ?>">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>เพิ่มข้อมูลแหล่งเรียนรู้</p>
+                                  <p>บันทึกข้อมูลบุคลิกภาพ</p>
                               </a>
                           </li>
                       </ul>
