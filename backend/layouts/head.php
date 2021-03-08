@@ -6,7 +6,9 @@
 	if (($_GET["menu"] == "user") OR ($_GET["menu"] == "user-add") OR ($_GET["menu"] == "user-edit")){ echo $title = "ข้อมูลบัญชีผู้ใช้"; } 
 	if (($_GET["menu"] == "learning_type") OR ($_GET["menu"] == "learning_type-add") OR ($_GET["menu"] == "learning_type-edit")){ echo $title = "ข้อมูลประเภทแหล่งเรียนรู้"; } 
 	if (($_GET["menu"] == "copyright") OR ($_GET["menu"] == "copyright-add") OR ($_GET["menu"] == "copyright-edit")){ echo $title = "ข้อมูลการเผยแพร่"; } 
-	if (($_GET["menu"] == "learning") OR ($_GET["menu"] == "learning-add") OR ($_GET["menu"] == "learning-view") OR ($_GET["menu"] == "learning-edit") OR ($_GET["menu"] == "learning-edit_img") OR ($_GET["menu"] == "learning-edit_vdo")){ echo $title = "ข้อมูลแหล่งเรียนรู้"; } if ($_GET["menu"] == "student"){ echo $title = "ข้อมูลนักเรียน"; }  ?></title> <!-- Tell the browser to be responsive to screen width -->
+	if (($_GET["menu"] == "learning") OR ($_GET["menu"] == "learning-add") OR ($_GET["menu"] == "learning-view") OR ($_GET["menu"] == "learning-edit") OR ($_GET["menu"] == "learning-edit_img") OR ($_GET["menu"] == "learning-edit_vdo")){ echo $title = "ข้อมูลแหล่งเรียนรู้"; } 
+    if (($_GET["menu"] == "personality") OR ($_GET["menu"] == "student") OR ($_GET["menu"] == "view_chart")){ echo $title = "ข้อมูลนักเรียน"; }
+      ?></title> <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/img/icon/favicon.ico">
     <!-- Font Awesome -->
