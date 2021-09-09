@@ -32,22 +32,22 @@ $content = isset($_GET["menu"])?$_GET["menu"]:"home";
 	<!-- Google Font: Source Sans Pro -->
 	<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />    <style type="text/css">
-		body {
-			font-family: 'K2D', sans-serif !important;
-			font-size: 15px !important;
-		}
-		.text-uppercase{
-			font-family: 'K2D', sans-serif !important;
-		}
-		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-			font-family: 'K2D', sans-serif !important;
-		}
-		.metta-learning{
-			padding: 0 0 0 20px !important;
-			word-wrap: break-word !important;
-		}
+	body {
+		font-family: 'K2D', sans-serif !important;
+		font-size: 15px !important;
+	}
+	.text-uppercase{
+		font-family: 'K2D', sans-serif !important;
+	}
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: 'K2D', sans-serif !important;
+	}
+	.metta-learning{
+		padding: 0 0 0 20px !important;
+		word-wrap: break-word !important;
+	}
 
-	</style>
+</style>
 </head>
 <body id="page-top">
 	<!-- Navigation-->
